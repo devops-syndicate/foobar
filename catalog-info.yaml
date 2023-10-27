@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "foobar"
+  annotations:
+    github.com/project-slug: "devops-syndicate/foobar"
+    argocd/app-name: foobar
+    backstage.io/techdocs-ref: dir:.
+  links:
+  - title: Link to ArgoCD
+    url: http://argo-cd.127.0.0.1.nip.io/applications/foobar
+  tags:
+  - nodejs
+spec:
+  type: service
+  owner: team-a
+  lifecycle: production
+  providesApis:
+  - foobar-api
