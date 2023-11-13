@@ -5,6 +5,9 @@ metadata:
   annotations:
     github.com/project-slug: "devops-syndicate/foobar"
     argocd/app-name: foobar
+    backstage.io/kubernetes-namespace: foobar
+    backstage.io/kubernetes-id: foobar
+    backstage.io/kubernetes-label-selector: 'app.oam.dev/name=foobar'
     backstage.io/techdocs-ref: dir:.
   links:
   - title: Link to ArgoCD
